@@ -11,7 +11,7 @@ mongoose.connect(config.database, {useNewUrlParser: true}, (err) => {
   err? console.log(err) : console.log('Connected to DB: ' + config.database);
 });
 
-const port = 3000;
+const port = (process.env.PORT || 3000);
 const productRoutes = require('./routes/products');
 
 app.use(bodyParser.json());

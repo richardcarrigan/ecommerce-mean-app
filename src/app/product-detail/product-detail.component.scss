@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+// Import your custom theme
+@import 'src/my-theme.scss';
+
+.product-detail {
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .product-detail {
+    padding: 0 50px;
+  }
+}
+.featured-image {
+  display: inline-block;
+  height: auto;
+  width: 40%;
+  float: left;
+  margin-right: 20px;
+}
+.price {
+  color: mat-color($candy-app-primary);
+  font-size: 1.5em;
+}
+.product-category, .product-id {
+  display: block;
+}

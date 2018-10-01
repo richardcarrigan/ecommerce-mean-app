@@ -1,0 +1,29 @@
+<h1>Products</h1>
+<div class="products" fxLayout="row wrap" fxLayoutAlign="space-evenly">
+  <mat-card *ngFor="let product of products">
+    <mat-card-header>
+      <mat-card-title>
+        <span class="product-name">{{product.name}}</span>
+        <span class="product-price">${{product.price}}</span>
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{product.image}}">
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/products', product._id ]">
+        <i class="material-icons">info_outline</i> More Info
+      </button>
+      <span class="space-filler"></span>
+      <button
+          class="snipcart-add-item"
+          attr.data-item-id="{{product._id}}"
+          attr.data-item-name="{{product.name}}"
+          attr.data-item-price="{{product.price}}"
+          attr.data-item-url="http://localhost:4200/products/{{product._id}}"
+          attr.data-item-description="{{product.description}}"
+          mat-raised-button
+          color="primary" >
+        <i class="material-icons">add_shopping_cart</i> Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

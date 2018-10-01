@@ -1,0 +1,17 @@
+mat-card {
+  margin-bottom: 20px;
+}
+::ng-deep .mat-card-header-text {
+  width: 100%;
+}
+.product-name {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.product-price {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}

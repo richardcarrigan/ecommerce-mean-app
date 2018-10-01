@@ -1,0 +1,19 @@
+<div class="product-detail">
+  <img class="featured-image" src="{{product.image}}">
+  <h1>{{product.name}}</h1>
+  <p class="price">${{product.price}}</p>
+  <p>{{product.description}}</p>
+  <button
+    class="snipcart-add-item"
+    attr.data-item-id="{{product._id}}"
+    attr.data-item-name="{{product.name}}"
+    attr.data-item-price="{{product.price}}"
+    attr.data-item-url="http://localhost:4200/products/{{product._id}}"
+    attr.data-item-description="{{product.description}}"
+    mat-raised-button
+    color="primary">
+    Add To Cart
+  </button>
+  <p class="product-category">Category: {{product.category}}</p>
+  <p class="product-id">Item # {{product._id}}</p>
+</div>

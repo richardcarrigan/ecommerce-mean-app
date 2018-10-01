@@ -1,4 +1,4 @@
-<h1>Products</h1>
+<h1>Shop</h1>
 <div class="products" fxLayout="row wrap" fxLayoutAlign="space-evenly">
   <mat-card *ngFor="let product of products">
     <mat-card-header>
@@ -9,7 +9,7 @@
     </mat-card-header>
     <img mat-card-image src="{{product.image}}">
     <mat-card-actions>
-      <button mat-button [routerLink]="['/products', product._id ]">
+      <button mat-button [routerLink]="['/shop', product._id ]">
         <i class="material-icons">info_outline</i> More Info
       </button>
       <span class="space-filler"></span>
@@ -18,7 +18,7 @@
           attr.data-item-id="{{product._id}}"
           attr.data-item-name="{{product.name}}"
           attr.data-item-price="{{product.price}}"
-          attr.data-item-url="products/{{product._id}}"
+          attr.data-item-url="shop/{{product._id}}"
           attr.data-item-description="{{product.description}}"
           mat-raised-button
           color="primary" >

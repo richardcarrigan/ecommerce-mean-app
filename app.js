@@ -19,6 +19,10 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.render('./dist/index.html');
+});
+
 app.use('/products', productRoutes);
 
 app.get('*', (req, res) => {

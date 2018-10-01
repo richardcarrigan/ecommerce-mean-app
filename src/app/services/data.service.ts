@@ -9,12 +9,12 @@ export class DataService {
   }
 
   getProducts() {
-    return this.http.get('http://localhost:3000/products')
+    return this.http.get('products')
     .map(res => res.json());
   }
 
   getProductById(id:String) {
-    return this.http.get('http://localhost:3000/products/' + id)
+    return this.http.get('products/' + id)
     .map(res => res.json());
   }
 

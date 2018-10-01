@@ -12,7 +12,7 @@ mongoose.connect(config.database, {useNewUrlParser: true}, (err) => {
 });
 
 const host = '0.0.0.0';
-const port = (process.env.PORT || 3000);
+const port = process.env.PORT || 8080;
 const productRoutes = require('./routes/products');
 
 app.use(bodyParser.json());

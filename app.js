@@ -11,6 +11,7 @@ mongoose.connect(config.database, {useNewUrlParser: true}, (err) => {
   err? console.log(err) : console.log('Connected to DB: ' + config.database);
 });
 
+const host = '0.0.0.0';
 const port = (process.env.PORT || 3000);
 const productRoutes = require('./routes/products');
 
@@ -24,6 +25,6 @@ app.get('*', (req, res) => {
   res.render('./dist/index.html');
 });
 
-app.listen(port, () => {
+app.listen(port, host, () => {
   console.log('Server listening on port ' + port + '...');
 });

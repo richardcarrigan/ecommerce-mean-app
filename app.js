@@ -21,7 +21,7 @@ app.use(cors());
 app.use('/products', productRoutes);
 
 app.get('*', (req, res) => {
-  res.render('./public/index.html');
+  res.render('./dist/index.html');
 });
 
 app.listen(port, () => {

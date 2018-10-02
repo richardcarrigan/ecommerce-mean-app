@@ -1,13 +1,15 @@
 <h1>Shop</h1>
 <div class="products" fxLayout="row wrap" fxLayoutAlign="space-evenly">
   <mat-card *ngFor="let product of products">
-    <mat-card-header>
-      <mat-card-title>
-        <span class="product-name">{{product.name}}</span>
-        <span class="product-price">${{product.price}}</span>
-      </mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{product.image}}">
+    <a [routerLink]="['/shop', product._id ]">
+      <mat-card-header>
+        <mat-card-title>
+          <span class="product-name">{{product.name}}</span>
+          <span class="product-price">${{product.price}}</span>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{product.image}}">
+    </a>
     <mat-card-actions>
       <button mat-button [routerLink]="['/shop', product._id ]">
         <i class="material-icons">info_outline</i> More Info

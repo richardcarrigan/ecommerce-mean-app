@@ -1,6 +1,10 @@
 mat-card {
   margin-bottom: 20px;
 }
+mat-card a {
+  text-decoration: none;
+  color: inherit;
+}
 ::ng-deep .mat-card-header-text {
   width: 100%;
 }

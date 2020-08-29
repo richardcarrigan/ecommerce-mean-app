@@ -5,7 +5,7 @@ import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -28,7 +28,7 @@ import { DataService } from './services/data.service';
     AppRoutingModule,
     FlexLayoutModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

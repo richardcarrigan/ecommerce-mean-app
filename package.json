@@ -22,7 +22,6 @@
     "@angular/cli": "~7.3.10",
     "@angular/common": "^10.0.14",
     "@angular/compiler": "^10.0.14",
-    "@angular/compiler-cli": "^10.0.14",
     "@angular/core": "^10.0.14",
     "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "^10.0.14",
@@ -41,6 +40,7 @@
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
+    "@angular/compiler-cli": "^10.0.14",
     "@angular/language-service": "^10.0.14",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",

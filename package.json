@@ -17,19 +17,19 @@
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/animations": "^7.2.16",
-    "@angular/cdk": "^6.4.6",
+    "@angular/animations": "^10.0.14",
+    "@angular/cdk": "^7.3.7",
     "@angular/cli": "~7.3.10",
-    "@angular/common": "^7.2.16",
-    "@angular/compiler": "^7.2.16",
-    "@angular/compiler-cli": "^7.2.16",
-    "@angular/core": "^7.2.16",
-    "@angular/flex-layout": "^7.0.0-beta.24",
-    "@angular/forms": "^7.2.16",
-    "@angular/material": "^6.4.6",
-    "@angular/platform-browser": "^7.2.16",
-    "@angular/platform-browser-dynamic": "^7.2.16",
-    "@angular/router": "^7.2.16",
+    "@angular/common": "^10.0.14",
+    "@angular/compiler": "^10.0.14",
+    "@angular/compiler-cli": "^10.0.14",
+    "@angular/core": "^10.0.14",
+    "@angular/flex-layout": "^10.0.0-beta.32",
+    "@angular/forms": "^10.0.14",
+    "@angular/material": "^7.3.7",
+    "@angular/platform-browser": "^10.0.14",
+    "@angular/platform-browser-dynamic": "^10.0.14",
+    "@angular/router": "^10.0.14",
     "core-js": "^2.5.4",
     "cors": "^2.8.4",
     "express": "^4.16.3",
@@ -38,14 +38,14 @@
     "rxjs": "^6.6.2",
     "rxjs-compat": "^6.2.2",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.29"
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
-    "@angular/language-service": "^7.2.16",
+    "@angular/language-service": "^10.0.14",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "codelyzer": "~4.2.1",
+    "codelyzer": "^6.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
@@ -56,6 +56,6 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~3.2.4"
+    "typescript": "~3.9.7"
   }
 }

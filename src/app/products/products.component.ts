@@ -8,9 +8,9 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products:Product[];
+  products: Product[];
 
-  constructor(private dataService:DataService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getProducts().subscribe((products) => {

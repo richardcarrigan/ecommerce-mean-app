@@ -1,20 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 import { Product } from '../product';
 
 @Injectable()
 export class DataService {
 
-  constructor(public http:HttpClient) {
+  constructor(public http: HttpClient) {
   }
 
   getProducts() {
     return this.http.get<Product[]>('/products');
   }
 
-  getProductById(id:String) {
+  getProductById(id: String) {
     return this.http.get<Product>('/products/' + id);
   }
 

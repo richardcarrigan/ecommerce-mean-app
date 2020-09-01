@@ -9,18 +9,18 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
-  product:Product;
+  product: Product;
 
   constructor(
     private route: ActivatedRoute,
-    private dataService:DataService,
+    private dataService: DataService,
   ) { }
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     this.dataService.getProductById(id).subscribe((product) => {
       this.product = product;
-    })
+    });
   }
 
 }

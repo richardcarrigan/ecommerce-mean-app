@@ -3,7 +3,7 @@
   "description": "E-commerce app using MEAN stack, Angular Material, and Snipcart",
   "version": "1.0.0",
   "engines": {
-    "node": "8.11.3"
+    "node": "10.19.0"
   },
   "scripts": {
     "ng": "ng",

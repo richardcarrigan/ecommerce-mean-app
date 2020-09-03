@@ -10,7 +10,7 @@ const app = express();
 mongoose.Promise = global.Promise;
 
 // Connect to Database
-mongoose.connect(config.database, {useNewUrlParser: true}, (err) => {
+mongoose.connect(config.database, {useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
   err? console.log(err) : console.log('Connected to DB: ' + config.database);
 });
 

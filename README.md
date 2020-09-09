@@ -1,27 +1,15 @@
-# EcommerceMeanApp
+# E-commerce MEAN App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+The E-commerce MEAN App combines the power of MongoDB, ExpressJS, Angular, and Node.js with the design and user interaction principles of Google's Material Design spec. E-commerce functionality is made possible through integration with Snipcart.
 
-## Development server
+## Installation and Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To get started, `git clone` the project into the desired location on your machine. Once cloned, `cd` into the directory and run `npm install` to install the required production and development dependencies. Running `npm install` will also trigger a postinstall `ng build --prod --output-path dist` script which will build the Angular front-end and put it into a new "dist" directory within your project. Once these scripts complete, run `npm start` to run the development server. Once the development server has started and is connected to the MongoDB database, open your preferred browser and navigate to "localhost:8080" to use the app.
 
-## Code scaffolding
+## MongoDB Configuration
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Because this is a conceptual project and there is no sensitive information, the database configuration details are located in the config/database.js file. However, if cloning or forking this repo to be used as a production e-commerce store, make sure you utilize environment variables for the database username and password.
 
-## Build
+## Angular Configuration
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+In development, all Angular components, modules, and services are located in the "src" directory. All Material Design components used in this app are collected into a "Material" module located at "src/app/material.module.ts". The app has three main components: Home, Products, and Product Detail. The Home component contains the home page, which is just static HTML serving as the landing page for the app. The Products component uses the data service to retrieve all products and programmatically display them as Material Design cards. Finally, the Product Detail component uses the data service and the URL-supplied Product ID parameter to dynamically build a page with more detail on the specific product requested.

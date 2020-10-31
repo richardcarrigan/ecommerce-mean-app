@@ -1,9 +1,9 @@
-const express = require('express'),
-      path = require('path'),
-      mongoose = require('mongoose'),
-      bodyParser = require('body-parser'),
+const bodyParser = require('body-parser'),
       config = require('./config/database'),
-      cors = require('cors');
+      cors = require('cors'),
+      express = require('express'),
+      mongoose = require('mongoose'),
+      path = require('path');
 
 const app = express();
 
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/products', productRoutes);
 
 app.get('*', (req, res) => {
-  res.render('./dist/index.html');
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // Start Server

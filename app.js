@@ -1,5 +1,5 @@
 const bodyParser = require('body-parser'),
-      config = require('./config/database'),
+      dotenv = require('dotenv').config(),
       cors = require('cors'),
       express = require('express'),
       mongoose = require('mongoose'),
@@ -10,8 +10,8 @@ const app = express();
 mongoose.Promise = global.Promise;
 
 // Connect to Database
-mongoose.connect(config.database, {useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
-  err? console.log(err) : console.log('Connected to DB: ' + config.database);
+mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+  err? console.log(err) : console.log('Connected to DB');
 });
 
 // Set server host and port

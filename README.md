@@ -8,7 +8,7 @@ To get started, `git clone` the project into the desired location on your machin
 
 ## MongoDB Configuration
 
-Because this is a conceptual project and there is no sensitive information, the database configuration details are located in the config/database.js file. However, if cloning or forking this repo to be used as a production e-commerce store, make sure you utilize environment variables for the database username and password.
+MongoDB connection string is stored in process.env.MONGODB_URI.
 
 ## Angular Configuration
 

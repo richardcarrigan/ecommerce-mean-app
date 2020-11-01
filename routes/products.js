@@ -2,7 +2,6 @@ const express = require('express'),
       router = express.Router({mergeParams:true});
 
 const Product = require('../models/product');
-const config = require('../config/database');
 
 // INDEX - show all products
 router.get('/', (req, res) => {

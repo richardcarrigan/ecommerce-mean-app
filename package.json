@@ -33,7 +33,7 @@
     "@angular/router": "^11.2.14",
     "core-js": "^3.26.1",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.3",
     "express": "^4.16.3",
     "html": "^1.0.0",
     "mongoose": "^5.2.9",

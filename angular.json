@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "ecommerce-mean-app"
+  "defaultProject": "ecommerce-mean-app",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -39,7 +39,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -124,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ecommerce-mean-app"
+  "defaultProject": "ecommerce-mean-app",
+  "cli": {
+    "analytics": false
+  }
 }
